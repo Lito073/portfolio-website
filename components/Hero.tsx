@@ -26,7 +26,9 @@ export function Hero() {
             duration: 1,
             stagger: 0.2,
             ease: "power3.out",
-            clearProps: "all"
+            onComplete: function() {
+              gsap.set(this.targets(), { clearProps: "transform" });
+            }
           }
         );
       }
