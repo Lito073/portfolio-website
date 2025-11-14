@@ -41,8 +41,8 @@ export function Contact() {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="absolute inset-0 bg-gradient-to-br from-purple-600/10 to-blue-600/10 rounded-2xl blur-xl" />
-            <form onSubmit={handleSubmit} className="relative p-8 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm space-y-6">
+            <div className="absolute inset-0 bg-gradient-to-br from-purple-600/30 to-blue-600/30 rounded-2xl blur-3xl" />
+            <form onSubmit={handleSubmit} className="relative p-8 rounded-2xl bg-white/10 border border-white/20 backdrop-blur-sm space-y-6">
               <div>
                 <label className="block text-sm font-medium mb-2">Naam</label>
                 <input
@@ -93,12 +93,12 @@ export function Contact() {
             className="space-y-6"
           >
             <div className="relative group">
-              <div className="absolute inset-0 bg-gradient-to-br from-green-600/20 to-emerald-600/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300" />
+              <div className="absolute inset-0 bg-gradient-to-br from-green-600/30 to-emerald-600/30 rounded-2xl blur-3xl group-hover:blur-3xl transition-all duration-300" />
               <a
                 href="https://wa.me/31612345678"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="relative block p-8 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm hover:border-green-500/50 transition-all duration-300"
+                className="relative block p-8 rounded-2xl bg-white/10 border border-white/20 backdrop-blur-sm hover:border-green-500/50 transition-all duration-300"
               >
                 <MessageCircle className="w-12 h-12 text-green-400 mb-4" />
                 <h3 className="text-2xl font-bold mb-2">WhatsApp</h3>
@@ -108,10 +108,10 @@ export function Contact() {
             </div>
 
             <div className="relative group">
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-purple-600/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300" />
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-600/30 to-purple-600/30 rounded-2xl blur-3xl group-hover:blur-3xl transition-all duration-300" />
               <a
                 href="mailto:lito@litoslab.nl"
-                className="relative block p-8 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm hover:border-blue-500/50 transition-all duration-300"
+                className="relative block p-8 rounded-2xl bg-white/10 border border-white/20 backdrop-blur-sm hover:border-blue-500/50 transition-all duration-300"
               >
                 <Mail className="w-12 h-12 text-blue-400 mb-4" />
                 <h3 className="text-2xl font-bold mb-2">Email</h3>
