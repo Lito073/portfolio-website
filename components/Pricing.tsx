@@ -21,7 +21,7 @@ export function Pricing() {
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-500/20 border border-red-500/30 mb-8"
             >
               <Clock className="w-4 h-4 text-red-400" />
-              <span className="text-sm text-red-300 font-semibold">Eerste 10 klanten</span>
+              <span className="text-sm text-red-300 font-semibold">Nog 3 plekken over</span>
             </motion.div>
 
             <div className="space-y-6">
@@ -51,7 +51,14 @@ export function Pricing() {
                 </MagneticButton>
               </div>
 
-              <p className="text-sm text-gray-500 text-center">
+              <div className="mt-6 p-4 rounded-xl bg-green-500/10 border border-green-500/20">
+                <p className="text-sm text-green-300 font-semibold text-center">
+                  ✓ 100% tevredenheidsgarantie<br/>
+                  ✓ Gratis correctieronde inbegrepen
+                </p>
+              </div>
+
+              <p className="text-sm text-gray-500 text-center mt-4">
                 Optioneel: Domeinnaam + 1 jaar hosting voor €25 extra
               </p>
             </div>

@@ -47,7 +47,8 @@ export function Services() {
             Wat je <span className="text-gradient">krijgt</span>
           </h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            Alles wat je nodig hebt voor een professionele online aanwezigheid
+            Stop met geld verbranden aan dure webbureau's.<br/>
+            <span className="text-white font-semibold">Krijg meer voor minder.</span>
           </p>
         </motion.div>
 

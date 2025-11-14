@@ -65,7 +65,7 @@ export function Hero() {
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-500/10 border border-purple-500/20 backdrop-blur-sm"
           >
             <Sparkles className="w-4 h-4 text-purple-400" />
-            <span className="text-sm text-purple-300">Beperkte plaatsen beschikbaar</span>
+            <span className="text-sm text-purple-300">Nog 7 plekken beschikbaar deze maand</span>
           </motion.div>
 
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight hero-text">
