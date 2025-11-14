@@ -8,6 +8,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Professionele Websites vanaf €200 | Snel & Modern",
   description: "Complete professionele website in 24-48 uur. Modern design, mobile-friendly, geen abonnement.",
+  icons: {
+    icon: '/favicon.ico',
+  },
 };
 
 export default function RootLayout({

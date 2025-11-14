@@ -120,7 +120,7 @@ export function Hero() {
             repeat: Infinity,
             ease: "easeInOut",
           }}
-          className="absolute top-20 left-10 w-72 h-72 bg-purple-500/10 rounded-full blur-3xl"
+          className="absolute top-20 left-10 w-72 h-72 bg-purple-500/10 rounded-full blur-3xl pointer-events-none"
         />
         <motion.div
           animate={{
@@ -131,7 +131,7 @@ export function Hero() {
             repeat: Infinity,
             ease: "easeInOut",
           }}
-          className="absolute bottom-20 right-10 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"
+          className="absolute bottom-20 right-10 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl pointer-events-none"
         />
       </div>
     </section>

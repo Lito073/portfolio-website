@@ -30,16 +30,7 @@ export function MagneticButton({ children, href }: { children: React.ReactNode; 
       className="relative px-8 py-4 rounded-full bg-gradient-to-r from-purple-600 to-blue-600 font-semibold text-lg overflow-hidden group"
     >
       <span className="relative z-10">{children}</span>
-      <motion.div
-        className="absolute inset-0 bg-gradient-to-r from-purple-400 to-blue-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-        animate={{
-          scale: [1, 1.2, 1],
-        }}
-        transition={{
-          duration: 2,
-          repeat: Infinity,
-        }}
-      />
+      <div className="absolute inset-0 bg-gradient-to-r from-purple-400 to-blue-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
     </motion.a>
   );
 }
