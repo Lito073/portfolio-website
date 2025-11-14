@@ -1,0 +1,102 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { Zap, Smartphone, Palette, CheckCircle2 } from "lucide-react";
+
+const services = [
+  {
+    icon: Zap,
+    title: "Razendsnel",
+    description: "Jouw website live in 24-48 uur. Geen weken wachten.",
+  },
+  {
+    icon: Smartphone,
+    title: "Mobile-First",
+    description: "Perfect op elke telefoon, tablet en desktop.",
+  },
+  {
+    icon: Palette,
+    title: "Modern Design",
+    description: "Strak, professioneel en helemaal van deze tijd.",
+  },
+];
+
+const included = [
+  "Homepage met impact",
+  "Diensten/Overzichtpagina",
+  "Contactpagina met formulier",
+  "Mobile-friendly responsive design",
+  "1 correctieronde inbegrepen",
+  "SEO-geoptimaliseerd",
+  "Snelle laadtijden",
+  "Geen maandelijkse kosten",
+];
+
+export function Services() {
+  return (
+    <section id="diensten" className="relative py-32 px-6">
+      <div className="max-w-7xl mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-20"
+        >
+          <h2 className="text-4xl md:text-6xl font-bold mb-6">
+            Wat je <span className="text-gradient">krijgt</span>
+          </h2>
+          <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+            Alles wat je nodig hebt voor een professionele online aanwezigheid
+          </p>
+        </motion.div>
+
+        {/* Service cards */}
+        <div className="grid md:grid-cols-3 gap-8 mb-20">
+          {services.map((service, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.1 }}
+              whileHover={{ y: -10, scale: 1.05 }}
+              className="relative group service-card"
+            >
+              <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-blue-600/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500" />
+              <div className="relative p-8 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm hover:border-purple-500/50 transition-all duration-500 hover:bg-white/10">
+                <service.icon className="w-12 h-12 text-purple-400 mb-4" />
+                <h3 className="text-2xl font-bold mb-3">{service.title}</h3>
+                <p className="text-gray-400">{service.description}</p>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+
+        {/* Included features */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="relative max-w-4xl mx-auto"
+        >
+          <div className="absolute inset-0 bg-gradient-to-r from-purple-600/10 to-blue-600/10 rounded-3xl blur-2xl" />
+          <div className="relative p-12 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-sm">
+            <h3 className="text-3xl font-bold mb-8 text-center">Inbegrepen in je pakket</h3>
+            <div className="grid md:grid-cols-2 gap-4">
+              {included.map((item, i) => (
+                <div
+                  key={i}
+                  className="flex items-center gap-3 feature-item"
+                >
+                  <CheckCircle2 className="w-6 h-6 text-green-400 flex-shrink-0" />
+                  <span className="text-gray-300">{item}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </motion.div>
+      </div>
+    </section>
+  );
+}
