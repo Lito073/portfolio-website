@@ -110,13 +110,13 @@ export function Contact() {
             <div className="relative group">
               <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-purple-600/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300" />
               <a
-                href="mailto:info@litoslab.nl"
+                href="mailto:lito@litoslab.nl"
                 className="relative block p-8 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm hover:border-blue-500/50 transition-all duration-300"
               >
                 <Mail className="w-12 h-12 text-blue-400 mb-4" />
                 <h3 className="text-2xl font-bold mb-2">Email</h3>
                 <p className="text-gray-400 mb-4">Antwoord binnen 24 uur</p>
-                <span className="text-blue-400 font-semibold">info@litoslab.nl</span>
+                <span className="text-blue-400 font-semibold">lito@litoslab.nl</span>
               </a>
             </div>
 
