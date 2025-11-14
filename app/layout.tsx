@@ -6,8 +6,8 @@ import { AnimatedBackground } from "@/components/AnimatedBackground";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Professionele Websites vanaf €200 | Snel & Modern",
-  description: "Complete professionele website in 24-48 uur. Modern design, mobile-friendly, geen abonnement.",
+  title: "Professionele Websites vanaf €200 | Lito's Lab",
+  description: "Complete professionele website in 24-48 uur. Modern design, mobile-friendly, geen abonnement. Door Lito's Lab.",
   icons: {
     icon: '/favicon.ico',
   },
