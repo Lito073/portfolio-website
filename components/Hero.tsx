@@ -14,13 +14,19 @@ export function Hero() {
 
   useEffect(() => {
     if (heroRef.current) {
-      gsap.from(".hero-text", {
-        opacity: 0,
-        y: 50,
-        duration: 1,
-        stagger: 0.2,
-        ease: "power3.out",
-      });
+      gsap.fromTo(".hero-text", 
+        {
+          opacity: 0,
+          y: 50,
+        },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          stagger: 0.2,
+          ease: "power3.out",
+        }
+      );
     }
   }, []);
 
