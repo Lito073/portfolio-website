@@ -21,7 +21,7 @@ export function Pricing() {
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-500/20 border border-red-500/30 mb-8"
             >
               <Clock className="w-4 h-4 text-red-400" />
-              <span className="text-sm text-red-300 font-semibold">Nog 3 plekken over</span>
+              <span className="text-sm text-red-300 font-semibold">7 van 10 plekken al bezet</span>
             </motion.div>
 
             <div className="space-y-6">
