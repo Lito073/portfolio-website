@@ -13,21 +13,25 @@ export function Hero() {
   const heroRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (heroRef.current) {
-      gsap.fromTo(".hero-text", 
-        {
-          opacity: 0,
-          y: 50,
-        },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 1,
-          stagger: 0.2,
-          ease: "power3.out",
-        }
-      );
-    }
+    const timer = setTimeout(() => {
+      if (heroRef.current) {
+        gsap.fromTo(".hero-text", 
+          {
+            opacity: 0,
+            y: 50,
+          },
+          {
+            opacity: 1,
+            y: 0,
+            duration: 1,
+            stagger: 0.2,
+            ease: "power3.out",
+            clearProps: "all"
+          }
+        );
+      }
+    }, 100);
+    return () => clearTimeout(timer);
   }, []);
 
   return (
@@ -87,12 +91,7 @@ export function Hero() {
             <span className="text-white font-semibold">Gewoon een website die werkt.</span>
           </p>
 
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.6 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8 hero-text"
-          >
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8 hero-text">
             <MagneticButton href="#diensten">
               <span className="flex items-center gap-2">
                 Bekijk wat je krijgt
@@ -106,7 +105,7 @@ export function Hero() {
             >
               Direct contact
             </a>
-          </motion.div>
+          </div>
         </motion.div>
 
         {/* Floating elements */}
