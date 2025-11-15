@@ -6,7 +6,7 @@ const projectTypes = [
   {
     name: "Schildersbedrijf",
     category: "Lokale dienstverlening",
-    image: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=800&h=600&fit=crop",
+    image: "https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=800&h=600&fit=crop",
     color: "from-blue-600/20 to-cyan-600/20"
   },
   {
@@ -18,7 +18,7 @@ const projectTypes = [
   {
     name: "Installatiebedrijf",
     category: "Technische diensten",
-    image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop",
+    image: "https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=800&h=600&fit=crop",
     color: "from-orange-600/20 to-red-600/20"
   },
   {
