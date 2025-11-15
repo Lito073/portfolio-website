@@ -12,6 +12,9 @@ export function AnimatedBackground() {
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
 
+    const isMobile = window.innerWidth < 768;
+    if (isMobile) return; // Skip animation on mobile
+
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
@@ -23,7 +26,7 @@ export function AnimatedBackground() {
       size: number;
     }> = [];
 
-    for (let i = 0; i < 50; i++) {
+    for (let i = 0; i < 30; i++) {
       particles.push({
         x: Math.random() * canvas.width,
         y: Math.random() * canvas.height,
@@ -57,7 +60,7 @@ export function AnimatedBackground() {
           const dy = p.y - p2.y;
           const dist = Math.sqrt(dx * dx + dy * dy);
 
-          if (dist < 150) {
+          if (dist < 120) {
             ctx.beginPath();
             ctx.moveTo(p.x, p.y);
             ctx.lineTo(p2.x, p2.y);

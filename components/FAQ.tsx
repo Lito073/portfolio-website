@@ -64,15 +64,12 @@ export function FAQ() {
 
         <div className="space-y-4">
           {faqs.map((faq, i) => (
-            <motion.div
+            <div
               key={i}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: i * 0.05 }}
               className="relative group"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-purple-600/10 to-blue-600/10 rounded-xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              <div className="relative bg-white/5 border border-white/10 rounded-xl backdrop-blur-sm hover:border-purple-500/30 transition-all duration-300">
+              <div className="relative bg-white/20 border border-white/40 rounded-xl backdrop-blur-sm hover:border-purple-500/50 transition-all duration-300">
                 <button
                   onClick={() => setOpenIndex(openIndex === i ? null : i)}
                   className="w-full p-6 text-left flex items-center justify-between gap-4"
@@ -100,7 +97,7 @@ export function FAQ() {
                   )}
                 </AnimatePresence>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
 

@@ -51,14 +51,11 @@ export function Services() {
           {services.map((service, i) => (
             <motion.div
               key={i}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: i * 0.1 }}
               whileHover={{ y: -10, scale: 1.05 }}
               className="relative group service-card"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-purple-600/40 to-blue-600/40 rounded-2xl blur-3xl group-hover:blur-3xl transition-all duration-500" />
-              <div className="relative p-8 rounded-2xl bg-white/15 border border-white/30 backdrop-blur-sm hover:border-purple-500/70 transition-all duration-500 hover:bg-white/25">
+              <div className="relative p-8 rounded-2xl bg-white/25 border border-white/50 backdrop-blur-sm hover:border-purple-500/70 transition-all duration-500 hover:bg-white/35">
                 <service.icon className="w-12 h-12 text-purple-400 mb-4" />
                 <h3 className="text-2xl font-bold mb-3 text-white">{service.title}</h3>
                 <p className="text-gray-200">{service.description}</p>
@@ -70,7 +67,7 @@ export function Services() {
         {/* Included features */}
         <div className="relative max-w-4xl mx-auto">
           <div className="absolute inset-0 bg-gradient-to-r from-purple-600/40 to-blue-600/40 rounded-3xl blur-3xl" />
-          <div className="relative p-12 rounded-3xl bg-white/15 border border-white/30 backdrop-blur-sm">
+          <div className="relative p-12 rounded-3xl bg-white/25 border border-white/50 backdrop-blur-sm">
             <h3 className="text-3xl font-bold mb-8 text-center text-white">Inbegrepen in je pakket</h3>
             <div className="grid md:grid-cols-2 gap-4">
               {included.map((item, i) => (

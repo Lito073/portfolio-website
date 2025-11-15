@@ -28,6 +28,9 @@ export default function RootLayout({
         <meta httpEquiv="X-Frame-Options" content="SAMEORIGIN" />
         <meta httpEquiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
         <meta httpEquiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://images.unsplash.com" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
         <script
           dangerouslySetInnerHTML={{

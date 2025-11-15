@@ -64,9 +64,10 @@ export function Pricing() {
         <div className="mt-20 max-w-5xl mx-auto">
           <h3 className="text-2xl md:text-3xl font-bold text-center mb-8 text-white">Waarom Lito's Lab?</h3>
           <div className="overflow-x-auto">
+            <div className="p-8 rounded-2xl bg-white/10 border border-white/20 backdrop-blur-sm">
             <table className="w-full">
               <thead>
-                <tr className="border-b border-white/10">
+                <tr className="border-b border-white/30">
                   <th className="text-left p-4 text-gray-300 font-semibold"></th>
                   <th className="p-4 text-center">
                     <div className="text-white font-bold text-lg">Lito's Lab</div>
@@ -78,28 +79,28 @@ export function Pricing() {
                 </tr>
               </thead>
               <tbody className="text-sm">
-                <tr className="border-b border-white/10">
+                <tr className="border-b border-white/20">
                   <td className="p-4 text-gray-200 font-medium">Levertijd</td>
                   <td className="p-4 text-center text-green-400 font-semibold">48 uur</td>
                   <td className="p-4 text-center text-gray-500">4-8 weken</td>
                   <td className="p-4 text-center text-gray-500">1-2 weken</td>
                   <td className="p-4 text-center text-gray-500">Zelf doen</td>
                 </tr>
-                <tr className="border-b border-white/10">
+                <tr className="border-b border-white/20">
                   <td className="p-4 text-gray-200 font-medium">Kwaliteit</td>
                   <td className="p-4 text-center text-green-400">✓ Professioneel</td>
                   <td className="p-4 text-center text-green-400">✓ Professioneel</td>
                   <td className="p-4 text-center text-red-400">✗ Wisselend</td>
                   <td className="p-4 text-center text-yellow-400">~ Template</td>
                 </tr>
-                <tr className="border-b border-white/10">
+                <tr className="border-b border-white/20">
                   <td className="p-4 text-gray-200 font-medium">Maandkosten</td>
                   <td className="p-4 text-center text-green-400 font-semibold">€0</td>
                   <td className="p-4 text-center text-gray-500">€50-200</td>
                   <td className="p-4 text-center text-gray-500">€0</td>
                   <td className="p-4 text-center text-gray-500">€15-40</td>
                 </tr>
-                <tr className="border-b border-white/10">
+                <tr className="border-b border-white/20">
                   <td className="p-4 text-gray-200 font-medium">Support</td>
                   <td className="p-4 text-center text-green-400">✓ 2 weken gratis</td>
                   <td className="p-4 text-center text-green-400">✓ Betaald</td>
@@ -115,6 +116,7 @@ export function Pricing() {
                 </tr>
               </tbody>
             </table>
+            </div>
           </div>
         </div>
       </div>

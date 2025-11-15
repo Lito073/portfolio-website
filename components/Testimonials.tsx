@@ -1,29 +1,22 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Star } from "lucide-react";
 
-const testimonials = [
+const benefits = [
   {
-    name: "Mark van der Berg",
-    company: "Van der Berg Schilderwerken",
-    text: "Binnen 2 dagen een professionele website. Precies wat ik nodig had. Geen gedoe, gewoon resultaat.",
-    rating: 5,
-    image: "https://i.pravatar.cc/150?img=12"
+    icon: "⚡",
+    title: "Live in 48 uur",
+    text: "Geen weken wachten. Jouw website staat binnen 2 dagen online."
   },
   {
-    name: "Lisa Janssen",
-    company: "Janssen Coaching",
-    text: "Eindelijk een website waar ik trots op ben. Voor €200 had ik dit nooit verwacht. Echt top!",
-    rating: 5,
-    image: "https://i.pravatar.cc/150?img=45"
+    icon: "💰",
+    title: "€200 all-in",
+    text: "Geen verborgen kosten, geen maandelijkse abonnementen. Eenmalig betalen."
   },
   {
-    name: "Tom Bakker",
-    company: "Bakker Installaties",
-    text: "Geen gedoe met dure bureaus meer. Lito regelt het gewoon. Snelle communicatie, mooi resultaat.",
-    rating: 5,
-    image: "https://i.pravatar.cc/150?img=33"
+    icon: "🎯",
+    title: "100% op maat",
+    text: "Geen templates. Elke website wordt speciaal voor jou gebouwd."
   }
 ];
 
@@ -33,51 +26,35 @@ export function Testimonials() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
-            Wat <span className="text-gradient">klanten</span> zeggen
+            Waarom <span className="text-gradient">ondernemers</span> kiezen voor Lito's Lab
           </h2>
           <p className="text-xl text-gray-300">
-            100+ tevreden ondernemers gingen je voor
+            Eerlijk, snel en betaalbaar
           </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, i) => (
-            <motion.div
+          {benefits.map((benefit, i) => (
+            <div
               key={i}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: i * 0.1 }}
               className="relative group"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-purple-600/20 to-blue-600/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300" />
-              <div className="relative p-8 rounded-2xl bg-white/10 border border-white/20 backdrop-blur-sm">
-                <div className="flex gap-1 mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
-                  ))}
-                </div>
-                <p className="text-gray-200 mb-6 italic">"{testimonial.text}"</p>
-                <div className="flex items-center gap-4">
-                  <img 
-                    src={testimonial.image} 
-                    alt={testimonial.name}
-                    className="w-12 h-12 rounded-full"
-                  />
-                  <div>
-                    <p className="font-semibold text-white">{testimonial.name}</p>
-                    <p className="text-sm text-gray-300">{testimonial.company}</p>
-                  </div>
-                </div>
+              <div className="relative p-8 rounded-2xl bg-white/25 border border-white/50 backdrop-blur-sm text-center">
+                <div className="text-5xl mb-4">{benefit.icon}</div>
+                <h3 className="text-2xl font-bold mb-3 text-white">{benefit.title}</h3>
+                <p className="text-gray-200">{benefit.text}</p>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
 
         <div className="text-center mt-12">
-          <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-green-500/10 border border-green-500/20">
-            <span className="text-green-400 font-semibold">★ 4.9/5</span>
-            <span className="text-gray-300">•</span>
-            <span className="text-gray-200">Gebaseerd op 100+ reviews</span>
+          <div className="inline-block p-6 rounded-2xl bg-purple-500/20 border border-purple-500/40">
+            <p className="text-lg text-gray-200">
+              <span className="text-white font-bold">Nieuw gestart?</span> Help me mijn portfolio opbouwen.<br/>
+              Jij krijgt een top website voor €200, ik krijg een mooi referentieproject.
+            </p>
           </div>
         </div>
       </div>

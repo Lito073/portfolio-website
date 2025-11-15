@@ -1,11 +1,11 @@
 "use client";
 
 import { useRef } from "react";
-import { useFrame } from "@react-three/fiber";
+import { Canvas, useFrame } from "@react-three/fiber";
 import { Float, MeshDistortMaterial, Sphere } from "@react-three/drei";
 import * as THREE from "three";
 
-export function FloatingShape({ position, color }: { position: [number, number, number]; color: string }) {
+function FloatingShape({ position, color }: { position: [number, number, number]; color: string }) {
   const meshRef = useRef<THREE.Mesh>(null);
 
   useFrame((state) => {
@@ -17,7 +17,7 @@ export function FloatingShape({ position, color }: { position: [number, number, 
 
   return (
     <Float speed={2} rotationIntensity={1} floatIntensity={2}>
-      <Sphere ref={meshRef} args={[1, 64, 64]} position={position}>
+      <Sphere ref={meshRef} args={[1, 24, 24]} position={position}>
         <MeshDistortMaterial
           color={color}
           attach="material"
@@ -31,7 +31,7 @@ export function FloatingShape({ position, color }: { position: [number, number, 
   );
 }
 
-export function Scene() {
+function Scene() {
   return (
     <>
       <ambientLight intensity={0.5} />
@@ -42,5 +42,13 @@ export function Scene() {
       <FloatingShape position={[3, 0, 0]} color="#3b82f6" />
       <FloatingShape position={[0, 2, -2]} color="#ec4899" />
     </>
+  );
+}
+
+export function Scene3DCanvas() {
+  return (
+    <Canvas camera={{ position: [0, 0, 8], fov: 50 }}>
+      <Scene />
+    </Canvas>
   );
 }

@@ -7,7 +7,6 @@ import { Pricing } from "@/components/Pricing";
 import { FAQ } from "@/components/FAQ";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
-import { ScrollAnimations } from "@/components/ScrollAnimations";
 
 export default function Home() {
   return (
@@ -15,15 +14,13 @@ export default function Home() {
       <Hero />
       <Testimonials />
       <WhyUs />
-      <ScrollAnimations>
-        <Services />
-        <div id="portfolio">
-          <Portfolio />
-        </div>
-        <Pricing />
-        <FAQ />
-        <Contact />
-      </ScrollAnimations>
+      <Services />
+      <div id="portfolio">
+        <Portfolio />
+      </div>
+      <Pricing />
+      <FAQ />
+      <Contact />
       <Footer />
     </main>
   );

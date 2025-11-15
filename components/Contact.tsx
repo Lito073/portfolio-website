@@ -32,7 +32,7 @@ export function Contact() {
         <div className="grid md:grid-cols-2 gap-8">
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-br from-purple-600/40 to-blue-600/40 rounded-2xl blur-3xl" />
-            <form onSubmit={handleSubmit} className="relative p-8 rounded-2xl bg-white/15 border border-white/30 backdrop-blur-sm space-y-6">
+            <form onSubmit={handleSubmit} className="relative p-8 rounded-2xl bg-white/20 border border-white/40 backdrop-blur-sm space-y-6">
               <div>
                 <label className="block text-sm font-semibold mb-2 text-gray-200">Naam</label>
                 <input
@@ -83,7 +83,7 @@ export function Contact() {
                 href="https://wa.me/31612345678"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="relative block p-8 rounded-2xl bg-white/15 border border-white/30 backdrop-blur-sm hover:border-green-500/70 hover:bg-white/25 transition-all duration-300"
+                className="relative block p-8 rounded-2xl bg-white/20 border border-white/40 backdrop-blur-sm hover:border-green-500/70 hover:bg-white/30 transition-all duration-300"
               >
                 <MessageCircle className="w-12 h-12 text-green-400 mb-4" />
                 <h3 className="text-2xl font-bold mb-2 text-white">WhatsApp</h3>
@@ -96,7 +96,7 @@ export function Contact() {
               <div className="absolute inset-0 bg-gradient-to-br from-blue-600/40 to-purple-600/40 rounded-2xl blur-3xl group-hover:blur-3xl transition-all duration-300" />
               <a
                 href="mailto:lito@litoslab.nl"
-                className="relative block p-8 rounded-2xl bg-white/15 border border-white/30 backdrop-blur-sm hover:border-blue-500/70 hover:bg-white/25 transition-all duration-300"
+                className="relative block p-8 rounded-2xl bg-white/20 border border-white/40 backdrop-blur-sm hover:border-blue-500/70 hover:bg-white/30 transition-all duration-300"
               >
                 <Mail className="w-12 h-12 text-blue-400 mb-4" />
                 <h3 className="text-2xl font-bold mb-2 text-white">Email</h3>

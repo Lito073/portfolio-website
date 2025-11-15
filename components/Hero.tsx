@@ -3,47 +3,31 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { MagneticButton } from "./MagneticButton";
-import { Canvas } from "@react-three/fiber";
-import { Scene } from "./Scene3D";
 import { TypeAnimation } from "react-type-animation";
-import { useEffect, useRef } from "react";
-import gsap from "gsap";
+import { useEffect, useRef, useState, lazy, Suspense } from "react";
+import dynamic from "next/dynamic";
+
+const Scene3D = dynamic(() => import("./Scene3D").then(mod => ({ default: mod.Scene3DCanvas })), {
+  ssr: false,
+  loading: () => null
+});
 
 export function Hero() {
   const heroRef = useRef<HTMLDivElement>(null);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      if (heroRef.current) {
-        gsap.fromTo(".hero-text", 
-          {
-            opacity: 0,
-            y: 50,
-          },
-          {
-            opacity: 1,
-            y: 0,
-            duration: 1,
-            stagger: 0.2,
-            ease: "power3.out",
-            onComplete: function() {
-              gsap.set(this.targets(), { clearProps: "transform" });
-            }
-          }
-        );
-      }
-    }, 100);
-    return () => clearTimeout(timer);
+    setIsMobile(window.innerWidth < 768);
   }, []);
 
   return (
     <section ref={heroRef} className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* 3D Background */}
-      <div className="absolute inset-0 pointer-events-none">
-        <Canvas camera={{ position: [0, 0, 8], fov: 50 }}>
-          <Scene />
-        </Canvas>
-      </div>
+      {/* 3D Background - Desktop only */}
+      {!isMobile && (
+        <div className="absolute inset-0 pointer-events-none">
+          <Scene3D />
+        </div>
+      )}
 
       {/* Animated gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-purple-900/40 via-black/60 to-blue-900/40 backdrop-blur-sm pointer-events-none" />

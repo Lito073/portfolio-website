@@ -39,13 +39,9 @@ export function WhyUs() {
     <section className="relative py-32 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="inline-block px-4 py-2 rounded-full bg-gradient-to-r from-purple-600/20 to-pink-600/20 border border-purple-500/30 mb-6"
-          >
+          <div className="inline-block px-4 py-2 rounded-full bg-gradient-to-r from-purple-600/20 to-pink-600/20 border border-purple-500/30 mb-6">
             <span className="text-sm font-semibold text-purple-400">Win-Win Samenwerking</span>
-          </motion.div>
+          </div>
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
             Waarom dit <span className="text-gradient">voor ons beiden werkt</span>
           </h2>
@@ -58,15 +54,12 @@ export function WhyUs() {
           {benefits.map((benefit, i) => {
             const Icon = benefit.icon;
             return (
-              <motion.div
+              <div
                 key={i}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: i * 0.1 }}
                 className="relative group"
               >
                 <div className={`absolute inset-0 bg-gradient-to-br ${benefit.color} opacity-0 group-hover:opacity-10 rounded-2xl blur-xl transition-all duration-300`} />
-                <div className="relative p-8 rounded-2xl border border-white/20 bg-white/5 backdrop-blur-sm hover:border-purple-500/50 transition-all duration-300">
+                <div className="relative p-8 rounded-2xl border border-white/50 bg-white/25 backdrop-blur-sm hover:border-purple-500/50 transition-all duration-300">
                   <div className={`inline-flex p-3 rounded-xl bg-gradient-to-br ${benefit.color} mb-6`}>
                     <Icon className="w-6 h-6 text-white" />
                   </div>
@@ -91,18 +84,13 @@ export function WhyUs() {
                     </div>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             );
           })}
         </div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4 }}
-          className="mt-16 text-center"
-        >
-          <div className="inline-block p-8 rounded-2xl border border-purple-500/30 bg-gradient-to-br from-purple-600/10 to-pink-600/10 backdrop-blur-sm">
+        <div className="mt-16 text-center">
+          <div className="inline-block p-8 rounded-2xl border border-purple-500/50 bg-gradient-to-br from-purple-600/30 to-pink-600/30 backdrop-blur-sm">
             <p className="text-xl md:text-2xl font-bold mb-2">
               Simpel gezegd: <span className="text-gradient">Jouw succes = Mijn succes</span>
             </p>
@@ -110,7 +98,7 @@ export function WhyUs() {
               Daarom werk ik keihard om jou de beste website te geven voor €200
             </p>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );
