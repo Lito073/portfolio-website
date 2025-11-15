@@ -1,0 +1,18 @@
+[Unit]
+Description=Portfolio Website Dev Server
+After=network.target
+
+[Service]
+Type=simple
+User=lito
+WorkingDirectory=/home/lito/portfolio-website
+ExecStartPre=/bin/rm -rf /home/lito/portfolio-website/.next
+ExecStart=/home/lito/.nvm/versions/node/v22.16.0/bin/npm run dev
+Restart=always
+RestartSec=10
+Environment=NODE_ENV=development
+Environment=PORT=3000
+Environment=PATH=/home/lito/.nvm/versions/node/v22.16.0/bin:/usr/local/bin:/usr/bin:/bin
+
+[Install]
+WantedBy=multi-user.target
