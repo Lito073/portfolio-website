@@ -64,8 +64,8 @@ export function Pricing() {
         <div className="mt-20 max-w-5xl mx-auto">
           <h3 className="text-2xl md:text-3xl font-bold text-center mb-8 text-white">Waarom Lito's Lab?</h3>
           <div className="overflow-x-auto">
-            <div className="p-8 rounded-2xl bg-white/10 border border-white/20 backdrop-blur-sm">
-            <table className="w-full">
+            <div className="p-4 md:p-8 rounded-2xl bg-white/20 border border-white/40 backdrop-blur-sm">
+            <table className="w-full min-w-[600px]">
               <thead>
                 <tr className="border-b border-white/30">
                   <th className="text-left p-4 text-gray-300 font-semibold"></th>
