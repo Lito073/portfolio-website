@@ -13,7 +13,6 @@ export function AnimatedBackground() {
     if (!ctx) return;
 
     const isMobile = window.innerWidth < 768;
-    if (isMobile) return; // Skip animation on mobile
 
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
