@@ -20,6 +20,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="nl" className="dark">
+      <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-XXXXXXXXXX');
+            `,
+          }}
+        />
+      </head>
       <body className={`${inter.className} antialiased bg-black text-white`}>
         <AnimatedBackground />
         {children}

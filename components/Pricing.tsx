@@ -59,6 +59,64 @@ export function Pricing() {
             </div>
           </div>
         </div>
+
+        {/* Comparison Table */}
+        <div className="mt-20 max-w-5xl mx-auto">
+          <h3 className="text-2xl md:text-3xl font-bold text-center mb-8">Waarom Lito's Lab?</h3>
+          <div className="overflow-x-auto">
+            <table className="w-full">
+              <thead>
+                <tr className="border-b border-white/10">
+                  <th className="text-left p-4 text-gray-400 font-normal"></th>
+                  <th className="p-4 text-center">
+                    <div className="text-white font-bold">Lito's Lab</div>
+                    <div className="text-purple-400 text-sm">€200</div>
+                  </th>
+                  <th className="p-4 text-center text-gray-400">Webbureau<br/><span className="text-sm">€2500+</span></th>
+                  <th className="p-4 text-center text-gray-400">Fiverr<br/><span className="text-sm">€50-150</span></th>
+                  <th className="p-4 text-center text-gray-400">Wix/Squarespace<br/><span className="text-sm">€15/mnd</span></th>
+                </tr>
+              </thead>
+              <tbody className="text-sm">
+                <tr className="border-b border-white/10">
+                  <td className="p-4 text-gray-300">Levertijd</td>
+                  <td className="p-4 text-center text-green-400 font-semibold">48 uur</td>
+                  <td className="p-4 text-center text-gray-500">4-8 weken</td>
+                  <td className="p-4 text-center text-gray-500">1-2 weken</td>
+                  <td className="p-4 text-center text-gray-500">Zelf doen</td>
+                </tr>
+                <tr className="border-b border-white/10">
+                  <td className="p-4 text-gray-300">Kwaliteit</td>
+                  <td className="p-4 text-center text-green-400">✓ Professioneel</td>
+                  <td className="p-4 text-center text-green-400">✓ Professioneel</td>
+                  <td className="p-4 text-center text-red-400">✗ Wisselend</td>
+                  <td className="p-4 text-center text-yellow-400">~ Template</td>
+                </tr>
+                <tr className="border-b border-white/10">
+                  <td className="p-4 text-gray-300">Maandkosten</td>
+                  <td className="p-4 text-center text-green-400 font-semibold">€0</td>
+                  <td className="p-4 text-center text-gray-500">€50-200</td>
+                  <td className="p-4 text-center text-gray-500">€0</td>
+                  <td className="p-4 text-center text-gray-500">€15-40</td>
+                </tr>
+                <tr className="border-b border-white/10">
+                  <td className="p-4 text-gray-300">Support</td>
+                  <td className="p-4 text-center text-green-400">✓ 2 weken gratis</td>
+                  <td className="p-4 text-center text-green-400">✓ Betaald</td>
+                  <td className="p-4 text-center text-red-400">✗ Minimaal</td>
+                  <td className="p-4 text-center text-yellow-400">~ Forum</td>
+                </tr>
+                <tr>
+                  <td className="p-4 text-gray-300">Eigendom code</td>
+                  <td className="p-4 text-center text-green-400">✓ 100% van jou</td>
+                  <td className="p-4 text-center text-green-400">✓ Meestal wel</td>
+                  <td className="p-4 text-center text-yellow-400">~ Soms</td>
+                  <td className="p-4 text-center text-red-400">✗ Vendor lock-in</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
     </section>
   );

@@ -69,11 +69,11 @@ export function Hero() {
           </motion.div>
 
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight hero-text">
-            <span className="block">Jouw website,</span>
+            <span className="block">Van idee naar live website</span>
             <span className="block text-gradient glow">
               <TypeAnimation
                 sequence={[
-                  'in 48 uur live',
+                  'in 48 uur',
                   2000,
                   'zonder gedoe',
                   2000,
@@ -88,24 +88,24 @@ export function Hero() {
           </h1>
 
           <p className="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto leading-relaxed hero-text">
-            Professioneel. Modern. Snel. Geen abonnement, geen gedoe.
+            Geen Fiverr-troep. Geen Wix-templates. Geen bureau-prijzen.
             <br />
-            <span className="text-white font-semibold">Gewoon een website die werkt.</span>
+            <span className="text-white font-semibold">Gewoon een professionele website die werkt. €200 all-in.</span>
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8 hero-text">
-            <MagneticButton href="#diensten">
+            <MagneticButton href="#contact">
               <span className="flex items-center gap-2">
-                Bekijk wat je krijgt
+                Claim mijn €200 website
                 <ArrowRight className="w-5 h-5" />
               </span>
             </MagneticButton>
             
             <a
-              href="#contact"
+              href="#portfolio"
               className="px-8 py-4 rounded-full border border-white/20 hover:border-white/40 transition-all duration-300 hover:bg-white/5"
             >
-              Direct contact
+              Zie voorbeelden
             </a>
           </div>
         </motion.div>
