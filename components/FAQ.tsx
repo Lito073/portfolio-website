@@ -35,7 +35,7 @@ const faqs = [
   },
   {
     q: "Waarom zo goedkoop? Wat is de catch?",
-    a: "Geen catch. Ik gebruik efficiënte tools en templates als basis, pas ze aan voor jou. Geen overhead van een groot bureau. Gewoon eerlijke prijzen."
+    a: "Geen catch. Ik bouw alles from scratch met Next.js. Geen overhead van een groot bureau, geen dure kantoorpanden. Gewoon eerlijke prijzen."
   },
   {
     q: "Hoe snel kan ik starten?",

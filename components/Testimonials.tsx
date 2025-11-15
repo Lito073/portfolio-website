@@ -15,8 +15,8 @@ const benefits = [
   },
   {
     icon: "🎯",
-    title: "100% op maat",
-    text: "Geen templates. Elke website wordt speciaal voor jou gebouwd."
+    title: "100% from scratch",
+    text: "Geen templates. Alles gebouwd met Next.js, speciaal voor jou."
   }
 ];
 
