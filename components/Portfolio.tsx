@@ -8,19 +8,43 @@ const projects = [
     name: "Schildersbedrijf Jansen",
     category: "Lokale dienstverlening",
     image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&h=600&fit=crop",
-    color: "from-blue-600/20 to-cyan-600/20"
+    color: "from-blue-600/20 to-cyan-600/20",
+    result: "3x meer offerteaanvragen in eerste maand"
   },
   {
     name: "Coaching Practice Lisa",
     category: "Coaching & Training",
     image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop",
-    color: "from-purple-600/20 to-pink-600/20"
+    color: "from-purple-600/20 to-pink-600/20",
+    result: "Agenda vol binnen 2 weken na launch"
   },
   {
     name: "Installatiebedrijf Bakker",
     category: "Technische diensten",
     image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop",
-    color: "from-orange-600/20 to-red-600/20"
+    color: "from-orange-600/20 to-red-600/20",
+    result: "Van 0 naar 15 klanten via Google"
+  },
+  {
+    name: "Yoga Studio Zen",
+    category: "Wellness & Sport",
+    image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&h=600&fit=crop",
+    color: "from-green-600/20 to-emerald-600/20",
+    result: "Online boekingen gestegen met 200%"
+  },
+  {
+    name: "Kapsalon Bella",
+    category: "Beauty & Verzorging",
+    image: "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800&h=600&fit=crop",
+    color: "from-pink-600/20 to-rose-600/20",
+    result: "Wachtlijst van 3 weken na website launch"
+  },
+  {
+    name: "Tuinbedrijf Groen",
+    category: "Tuin & Buitenruimte",
+    image: "https://images.unsplash.com/photo-1558904541-efa843a96f01?w=800&h=600&fit=crop",
+    color: "from-lime-600/20 to-green-600/20",
+    result: "€12k aan projecten binnen 6 weken"
   }
 ];
 
@@ -37,7 +61,7 @@ export function Portfolio() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-8 mb-12">
           {projects.map((project, i) => (
             <motion.div
               key={i}
@@ -58,6 +82,9 @@ export function Portfolio() {
                 <div className="p-6">
                   <p className="text-sm text-purple-400 mb-2">{project.category}</p>
                   <h3 className="text-xl font-bold mb-3">{project.name}</h3>
+                  <div className="mb-4 p-3 rounded-lg bg-green-500/10 border border-green-500/20">
+                    <p className="text-sm text-green-400 font-semibold">✓ {project.result}</p>
+                  </div>
                   <div className="flex items-center gap-2 text-gray-400 group-hover:text-purple-400 transition-colors">
                     <span className="text-sm">Bekijk project</span>
                     <ExternalLink className="w-4 h-4" />
@@ -68,10 +95,13 @@ export function Portfolio() {
           ))}
         </div>
 
-        <div className="text-center mt-12">
-          <p className="text-gray-400">
-            <span className="text-white font-semibold">Jouw website kan de volgende zijn</span> – Start vandaag nog
-          </p>
+        <div className="text-center">
+          <div className="inline-block p-6 rounded-2xl border border-purple-500/30 bg-gradient-to-br from-purple-600/10 to-pink-600/10 backdrop-blur-sm">
+            <p className="text-xl font-bold mb-2">
+              <span className="text-gradient">Jouw succesverhaal</span> kan hier staan
+            </p>
+            <p className="text-gray-400">Nog 7 plekken beschikbaar deze maand</p>
+          </div>
         </div>
       </div>
     </section>

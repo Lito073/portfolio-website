@@ -1,0 +1,4 @@
+Contact: mailto:lito@litoslab.nl
+Expires: 2026-12-31T23:59:59.000Z
+Preferred-Languages: nl, en
+Canonical: https://actie.litoslab.nl/.well-known/security.txt

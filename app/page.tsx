@@ -1,5 +1,6 @@
 import { Hero } from "@/components/Hero";
 import { Testimonials } from "@/components/Testimonials";
+import { WhyUs } from "@/components/WhyUs";
 import { Services } from "@/components/Services";
 import { Portfolio } from "@/components/Portfolio";
 import { Pricing } from "@/components/Pricing";
@@ -13,6 +14,7 @@ export default function Home() {
     <main className="relative">
       <Hero />
       <Testimonials />
+      <WhyUs />
       <ScrollAnimations>
         <Services />
         <div id="portfolio">

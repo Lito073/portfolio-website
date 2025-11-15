@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   icons: {
     icon: '/favicon.ico',
   },
+  other: {
+    'referrer': 'strict-origin-when-cross-origin',
+  },
 };
 
 export default function RootLayout({
@@ -21,6 +24,10 @@ export default function RootLayout({
   return (
     <html lang="nl" className="dark">
       <head>
+        <meta httpEquiv="X-Content-Type-Options" content="nosniff" />
+        <meta httpEquiv="X-Frame-Options" content="SAMEORIGIN" />
+        <meta httpEquiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+        <meta httpEquiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()" />
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
         <script
           dangerouslySetInnerHTML={{
