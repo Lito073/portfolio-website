@@ -100,7 +100,6 @@ export function Pricing() {
               </div>
             </div>
           </div>
-          </div>
         </div>
       </div>
     </section>
