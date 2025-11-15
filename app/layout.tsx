@@ -7,8 +7,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Professionele Websites vanaf €200 | Lito's Lab",
-  description: "Complete professionele website in 24-48 uur. Modern design, mobile-friendly, geen abonnement. Door Lito's Lab.",
-  keywords: "website laten maken, goedkope website, professionele website, website €200, Next.js website, website bouwen",
+  description: "Complete professionele website in 2 dagen. Modern design, mobile-friendly, geen abonnement. Door Lito's Lab.",
+  keywords: "website laten maken, goedkope website, professionele website, website €200, Next.js website, website bouwen, website 2 dagen",
   authors: [{ name: "Lito's Lab" }],
   creator: "Lito's Lab",
   publisher: "Lito's Lab",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     locale: 'nl_NL',
     url: 'https://actie.litoslab.nl/',
     title: "Professionele Websites vanaf €200 | Lito's Lab",
-    description: "Complete professionele website in 24-48 uur. Modern design, mobile-friendly, geen abonnement.",
+    description: "Complete professionele website in 2 dagen. Modern design, mobile-friendly, geen abonnement.",
     siteName: "Lito's Lab",
     images: [{
       url: 'https://actie.litoslab.nl/og-image.svg',
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: "Professionele Websites vanaf €200 | Lito's Lab",
-    description: "Complete professionele website in 24-48 uur. Modern design, mobile-friendly, geen abonnement.",
+    description: "Complete professionele website in 2 dagen. Modern design, mobile-friendly, geen abonnement.",
     images: ['https://actie.litoslab.nl/og-image.svg'],
   },
   robots: {
@@ -65,19 +65,25 @@ export default function RootLayout({
         <link rel="preconnect" href="https://images.unsplash.com" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <link rel="canonical" href="https://actie.litoslab.nl/" />
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-XXXXXXXXXX');
-            `,
-          }}
-        />
+        {/* Google Analytics - Replace G-XXXXXXXXXX with your tracking ID */}
+        {process.env.NEXT_PUBLIC_GA_ID && (
+          <>
+            <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}></script>
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                  gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}');
+                `,
+              }}
+            />
+          </>
+        )}
       </head>
       <body className={`${inter.className} antialiased bg-black text-white`}>
+        <a href="#contact" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-purple-600 focus:text-white focus:rounded">Skip to contact</a>
         <AnimatedBackground />
         {children}
       </body>

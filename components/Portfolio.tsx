@@ -65,8 +65,10 @@ export function Portfolio() {
                 <div className="aspect-video overflow-hidden bg-gray-900">
                   <img 
                     src={project.image} 
-                    alt={project.name}
+                    alt={`Voorbeeld website voor ${project.name}`}
                     loading="lazy"
+                    width="800"
+                    height="600"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                 </div>

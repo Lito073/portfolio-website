@@ -79,15 +79,16 @@ export function Hero() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8 hero-text">
             <MagneticButton href="#contact">
-              <span className="flex items-center gap-2">
+              <span className="flex items-center gap-2" role="button" aria-label="Claim mijn website voor 200 euro">
                 Claim mijn €200 website
-                <ArrowRight className="w-5 h-5" />
+                <ArrowRight className="w-5 h-5" aria-hidden="true" />
               </span>
             </MagneticButton>
             
             <a
               href="#portfolio"
               className="px-8 py-4 rounded-full border border-white/30 hover:border-white/50 bg-white/5 hover:bg-white/10 transition-all duration-300 text-white font-semibold"
+              aria-label="Bekijk portfolio voorbeelden"
             >
               Zie voorbeelden
             </a>
