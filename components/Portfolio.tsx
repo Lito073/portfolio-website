@@ -56,7 +56,7 @@ export function Portfolio() {
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
             Recent <span className="text-gradient">gebouwd</span>
           </h2>
-          <p className="text-xl text-gray-400">
+          <p className="text-xl text-gray-300">
             Echte websites voor echte ondernemers
           </p>
         </div>
@@ -81,12 +81,12 @@ export function Portfolio() {
                 </div>
                 <div className="p-6">
                   <p className="text-sm text-purple-400 mb-2">{project.category}</p>
-                  <h3 className="text-xl font-bold mb-3">{project.name}</h3>
-                  <div className="mb-4 p-3 rounded-lg bg-green-500/10 border border-green-500/20">
-                    <p className="text-sm text-green-400 font-semibold">✓ {project.result}</p>
+                  <h3 className="text-xl font-bold mb-3 text-white">{project.name}</h3>
+                  <div className="mb-4 p-3 rounded-lg bg-green-500/20 border border-green-500/30">
+                    <p className="text-sm text-green-300 font-bold">✓ {project.result}</p>
                   </div>
-                  <div className="flex items-center gap-2 text-gray-400 group-hover:text-purple-400 transition-colors">
-                    <span className="text-sm">Bekijk project</span>
+                  <div className="flex items-center gap-2 text-gray-300 group-hover:text-purple-300 transition-colors">
+                    <span className="text-sm font-semibold">Bekijk project</span>
                     <ExternalLink className="w-4 h-4" />
                   </div>
                 </div>
@@ -100,7 +100,7 @@ export function Portfolio() {
             <p className="text-xl font-bold mb-2">
               <span className="text-gradient">Jouw succesverhaal</span> kan hier staan
             </p>
-            <p className="text-gray-400">Nog 7 plekken beschikbaar deze maand</p>
+            <p className="text-gray-300">Nog 7 plekken beschikbaar deze maand</p>
           </div>
         </div>
       </div>

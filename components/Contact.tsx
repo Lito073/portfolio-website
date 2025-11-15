@@ -24,7 +24,7 @@ export function Contact() {
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
             Laten we <span className="text-gradient">starten</span>
           </h2>
-          <p className="text-xl text-gray-400">
+          <p className="text-xl text-gray-300">
             Stuur een bericht of app direct via WhatsApp
           </p>
         </div>
@@ -34,7 +34,7 @@ export function Contact() {
             <div className="absolute inset-0 bg-gradient-to-br from-purple-600/40 to-blue-600/40 rounded-2xl blur-3xl" />
             <form onSubmit={handleSubmit} className="relative p-8 rounded-2xl bg-white/15 border border-white/30 backdrop-blur-sm space-y-6">
               <div>
-                <label className="block text-sm font-medium mb-2">Naam</label>
+                <label className="block text-sm font-semibold mb-2 text-gray-200">Naam</label>
                 <input
                   type="text"
                   required
@@ -45,7 +45,7 @@ export function Contact() {
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium mb-2">Email</label>
+                <label className="block text-sm font-semibold mb-2 text-gray-200">Email</label>
                 <input
                   type="email"
                   required
@@ -56,7 +56,7 @@ export function Contact() {
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium mb-2">Bericht</label>
+                <label className="block text-sm font-semibold mb-2 text-gray-200">Bericht</label>
                 <textarea
                   required
                   value={formData.message}
@@ -86,8 +86,8 @@ export function Contact() {
                 className="relative block p-8 rounded-2xl bg-white/15 border border-white/30 backdrop-blur-sm hover:border-green-500/70 hover:bg-white/25 transition-all duration-300"
               >
                 <MessageCircle className="w-12 h-12 text-green-400 mb-4" />
-                <h3 className="text-2xl font-bold mb-2">WhatsApp</h3>
-                <p className="text-gray-400 mb-4">Direct antwoord binnen 1 uur</p>
+                <h3 className="text-2xl font-bold mb-2 text-white">WhatsApp</h3>
+                <p className="text-gray-300 mb-4">Direct antwoord binnen 1 uur</p>
                 <span className="text-green-400 font-semibold">Start chat →</span>
               </a>
             </div>
@@ -99,14 +99,14 @@ export function Contact() {
                 className="relative block p-8 rounded-2xl bg-white/15 border border-white/30 backdrop-blur-sm hover:border-blue-500/70 hover:bg-white/25 transition-all duration-300"
               >
                 <Mail className="w-12 h-12 text-blue-400 mb-4" />
-                <h3 className="text-2xl font-bold mb-2">Email</h3>
-                <p className="text-gray-400 mb-4">Antwoord binnen 24 uur</p>
+                <h3 className="text-2xl font-bold mb-2 text-white">Email</h3>
+                <p className="text-gray-300 mb-4">Antwoord binnen 24 uur</p>
                 <span className="text-blue-400 font-semibold">lito@litoslab.nl</span>
               </a>
             </div>
 
-            <div className="p-6 rounded-xl bg-purple-500/10 border border-purple-500/20">
-              <p className="text-sm text-gray-300">
+            <div className="p-6 rounded-xl bg-purple-500/20 border border-purple-500/30">
+              <p className="text-sm text-gray-200">
                 <span className="text-purple-400 font-semibold">Tip:</span> Vermeld in je bericht wat voor bedrijf je hebt en wanneer je live wilt gaan. Dan kan ik direct een planning maken!
               </p>
             </div>

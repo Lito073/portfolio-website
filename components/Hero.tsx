@@ -87,10 +87,10 @@ export function Hero() {
             </span>
           </h1>
 
-          <p className="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto leading-relaxed hero-text">
+          <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed hero-text">
             Geen Fiverr-troep. Geen Wix-templates. Geen bureau-prijzen.
             <br />
-            <span className="text-white font-semibold">Gewoon een professionele website die werkt. €200 all-in.</span>
+            <span className="text-white font-bold">Gewoon een professionele website die werkt. €200 all-in.</span>
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8 hero-text">
@@ -103,7 +103,7 @@ export function Hero() {
             
             <a
               href="#portfolio"
-              className="px-8 py-4 rounded-full border border-white/20 hover:border-white/40 transition-all duration-300 hover:bg-white/5"
+              className="px-8 py-4 rounded-full border border-white/30 hover:border-white/50 bg-white/5 hover:bg-white/10 transition-all duration-300 text-white font-semibold"
             >
               Zie voorbeelden
             </a>

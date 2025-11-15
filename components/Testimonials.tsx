@@ -35,7 +35,7 @@ export function Testimonials() {
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
             Wat <span className="text-gradient">klanten</span> zeggen
           </h2>
-          <p className="text-xl text-gray-400">
+          <p className="text-xl text-gray-300">
             100+ tevreden ondernemers gingen je voor
           </p>
         </div>
@@ -56,7 +56,7 @@ export function Testimonials() {
                     <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
                   ))}
                 </div>
-                <p className="text-gray-300 mb-6 italic">"{testimonial.text}"</p>
+                <p className="text-gray-200 mb-6 italic">"{testimonial.text}"</p>
                 <div className="flex items-center gap-4">
                   <img 
                     src={testimonial.image} 
@@ -65,7 +65,7 @@ export function Testimonials() {
                   />
                   <div>
                     <p className="font-semibold text-white">{testimonial.name}</p>
-                    <p className="text-sm text-gray-400">{testimonial.company}</p>
+                    <p className="text-sm text-gray-300">{testimonial.company}</p>
                   </div>
                 </div>
               </div>
@@ -76,8 +76,8 @@ export function Testimonials() {
         <div className="text-center mt-12">
           <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-green-500/10 border border-green-500/20">
             <span className="text-green-400 font-semibold">★ 4.9/5</span>
-            <span className="text-gray-400">•</span>
-            <span className="text-gray-300">Gebaseerd op 100+ reviews</span>
+            <span className="text-gray-300">•</span>
+            <span className="text-gray-200">Gebaseerd op 100+ reviews</span>
           </div>
         </div>
       </div>

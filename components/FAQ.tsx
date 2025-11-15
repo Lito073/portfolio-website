@@ -57,7 +57,7 @@ export function FAQ() {
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
             Veelgestelde <span className="text-gradient">vragen</span>
           </h2>
-          <p className="text-xl text-gray-400">
+          <p className="text-xl text-gray-300">
             Alles wat je moet weten voordat je start
           </p>
         </div>
@@ -77,7 +77,7 @@ export function FAQ() {
                   onClick={() => setOpenIndex(openIndex === i ? null : i)}
                   className="w-full p-6 text-left flex items-center justify-between gap-4"
                 >
-                  <span className="font-semibold text-lg">{faq.q}</span>
+                  <span className="font-semibold text-lg text-white">{faq.q}</span>
                   <ChevronDown 
                     className={`w-5 h-5 text-purple-400 flex-shrink-0 transition-transform duration-300 ${
                       openIndex === i ? 'rotate-180' : ''
@@ -93,7 +93,7 @@ export function FAQ() {
                       transition={{ duration: 0.3 }}
                       className="overflow-hidden"
                     >
-                      <div className="px-6 pb-6 text-gray-400 leading-relaxed">
+                      <div className="px-6 pb-6 text-gray-200 leading-relaxed">
                         {faq.a}
                       </div>
                     </motion.div>
@@ -105,8 +105,8 @@ export function FAQ() {
         </div>
 
         <div className="mt-12 text-center">
-          <p className="text-gray-400">
-            Nog vragen? <a href="#contact" className="text-purple-400 hover:text-purple-300 font-semibold">Stuur me een bericht</a>
+          <p className="text-gray-300">
+            Nog vragen? <a href="#contact" className="text-purple-300 hover:text-purple-200 font-bold underline">Stuur me een bericht</a>
           </p>
         </div>
       </div>

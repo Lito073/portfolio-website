@@ -25,14 +25,14 @@ export function Pricing() {
                   <span className="text-6xl md:text-7xl font-bold text-gradient">€200</span>
                   <span className="text-2xl text-gray-400 line-through">€500</span>
                 </div>
-                <p className="text-xl text-gray-300">Eenmalig. Geen abonnement.</p>
+                <p className="text-xl text-gray-200 font-semibold">Eenmalig. Geen abonnement.</p>
               </div>
 
               <div className="h-px bg-gradient-to-r from-transparent via-purple-500/50 to-transparent" />
 
-              <div className="space-y-3 text-gray-300">
+              <div className="space-y-3 text-gray-200">
                 <p className="text-lg">
-                  <span className="text-white font-semibold">Complete professionele website</span> voor een fractie van de normale prijs.
+                  <span className="text-white font-bold">Complete professionele website</span> voor een fractie van de normale prijs.
                 </p>
                 <p className="flex items-center gap-2">
                   <Sparkles className="w-5 h-5 text-purple-400" />
@@ -46,8 +46,8 @@ export function Pricing() {
                 </MagneticButton>
               </div>
 
-              <div className="mt-6 p-4 rounded-xl bg-green-500/10 border border-green-500/20">
-                <p className="text-sm text-green-300 font-semibold text-center">
+              <div className="mt-6 p-4 rounded-xl bg-green-500/20 border border-green-500/30">
+                <p className="text-sm text-green-200 font-bold text-center">
                   ✓ 100% tevredenheidsgarantie<br/>
                   ✓ Gratis correctieronde inbegrepen
                 </p>
@@ -62,52 +62,52 @@ export function Pricing() {
 
         {/* Comparison Table */}
         <div className="mt-20 max-w-5xl mx-auto">
-          <h3 className="text-2xl md:text-3xl font-bold text-center mb-8">Waarom Lito's Lab?</h3>
+          <h3 className="text-2xl md:text-3xl font-bold text-center mb-8 text-white">Waarom Lito's Lab?</h3>
           <div className="overflow-x-auto">
             <table className="w-full">
               <thead>
                 <tr className="border-b border-white/10">
-                  <th className="text-left p-4 text-gray-400 font-normal"></th>
+                  <th className="text-left p-4 text-gray-300 font-semibold"></th>
                   <th className="p-4 text-center">
-                    <div className="text-white font-bold">Lito's Lab</div>
+                    <div className="text-white font-bold text-lg">Lito's Lab</div>
                     <div className="text-purple-400 text-sm">€200</div>
                   </th>
-                  <th className="p-4 text-center text-gray-400">Webbureau<br/><span className="text-sm">€2500+</span></th>
-                  <th className="p-4 text-center text-gray-400">Fiverr<br/><span className="text-sm">€50-150</span></th>
-                  <th className="p-4 text-center text-gray-400">Wix/Squarespace<br/><span className="text-sm">€15/mnd</span></th>
+                  <th className="p-4 text-center text-gray-300">Webbureau<br/><span className="text-sm">€2500+</span></th>
+                  <th className="p-4 text-center text-gray-300">Fiverr<br/><span className="text-sm">€50-150</span></th>
+                  <th className="p-4 text-center text-gray-300">Wix/Squarespace<br/><span className="text-sm">€15/mnd</span></th>
                 </tr>
               </thead>
               <tbody className="text-sm">
                 <tr className="border-b border-white/10">
-                  <td className="p-4 text-gray-300">Levertijd</td>
+                  <td className="p-4 text-gray-200 font-medium">Levertijd</td>
                   <td className="p-4 text-center text-green-400 font-semibold">48 uur</td>
                   <td className="p-4 text-center text-gray-500">4-8 weken</td>
                   <td className="p-4 text-center text-gray-500">1-2 weken</td>
                   <td className="p-4 text-center text-gray-500">Zelf doen</td>
                 </tr>
                 <tr className="border-b border-white/10">
-                  <td className="p-4 text-gray-300">Kwaliteit</td>
+                  <td className="p-4 text-gray-200 font-medium">Kwaliteit</td>
                   <td className="p-4 text-center text-green-400">✓ Professioneel</td>
                   <td className="p-4 text-center text-green-400">✓ Professioneel</td>
                   <td className="p-4 text-center text-red-400">✗ Wisselend</td>
                   <td className="p-4 text-center text-yellow-400">~ Template</td>
                 </tr>
                 <tr className="border-b border-white/10">
-                  <td className="p-4 text-gray-300">Maandkosten</td>
+                  <td className="p-4 text-gray-200 font-medium">Maandkosten</td>
                   <td className="p-4 text-center text-green-400 font-semibold">€0</td>
                   <td className="p-4 text-center text-gray-500">€50-200</td>
                   <td className="p-4 text-center text-gray-500">€0</td>
                   <td className="p-4 text-center text-gray-500">€15-40</td>
                 </tr>
                 <tr className="border-b border-white/10">
-                  <td className="p-4 text-gray-300">Support</td>
+                  <td className="p-4 text-gray-200 font-medium">Support</td>
                   <td className="p-4 text-center text-green-400">✓ 2 weken gratis</td>
                   <td className="p-4 text-center text-green-400">✓ Betaald</td>
                   <td className="p-4 text-center text-red-400">✗ Minimaal</td>
                   <td className="p-4 text-center text-yellow-400">~ Forum</td>
                 </tr>
                 <tr>
-                  <td className="p-4 text-gray-300">Eigendom code</td>
+                  <td className="p-4 text-gray-200 font-medium">Eigendom code</td>
                   <td className="p-4 text-center text-green-400">✓ 100% van jou</td>
                   <td className="p-4 text-center text-green-400">✓ Meestal wel</td>
                   <td className="p-4 text-center text-yellow-400">~ Soms</td>

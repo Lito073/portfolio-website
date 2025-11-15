@@ -49,7 +49,7 @@ export function WhyUs() {
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
             Waarom dit <span className="text-gradient">voor ons beiden werkt</span>
           </h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Geen bullshit, geen verborgen agenda. Dit is waarom samenwerken met Lito's Lab een no-brainer is.
           </p>
         </div>
@@ -71,7 +71,7 @@ export function WhyUs() {
                     <Icon className="w-6 h-6 text-white" />
                   </div>
                   
-                  <h3 className="text-2xl font-bold mb-6">{benefit.title}</h3>
+                  <h3 className="text-2xl font-bold mb-6 text-white">{benefit.title}</h3>
                   
                   <div className="space-y-4">
                     <div>
@@ -79,7 +79,7 @@ export function WhyUs() {
                         <div className="w-2 h-2 rounded-full bg-green-500" />
                         <span className="text-sm font-semibold text-green-400">Voor jou</span>
                       </div>
-                      <p className="text-gray-300 pl-4">{benefit.forYou}</p>
+                      <p className="text-gray-200 pl-4">{benefit.forYou}</p>
                     </div>
                     
                     <div>
@@ -87,7 +87,7 @@ export function WhyUs() {
                         <div className="w-2 h-2 rounded-full bg-purple-500" />
                         <span className="text-sm font-semibold text-purple-400">Voor mij</span>
                       </div>
-                      <p className="text-gray-300 pl-4">{benefit.forMe}</p>
+                      <p className="text-gray-200 pl-4">{benefit.forMe}</p>
                     </div>
                   </div>
                 </div>
@@ -106,7 +106,7 @@ export function WhyUs() {
             <p className="text-xl md:text-2xl font-bold mb-2">
               Simpel gezegd: <span className="text-gradient">Jouw succes = Mijn succes</span>
             </p>
-            <p className="text-gray-400">
+            <p className="text-gray-300">
               Daarom werk ik keihard om jou de beste website te geven voor €200
             </p>
           </div>
