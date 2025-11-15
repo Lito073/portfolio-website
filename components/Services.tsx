@@ -36,13 +36,7 @@ export function Services() {
   return (
     <section id="diensten" className="relative py-32 px-6">
       <div className="max-w-7xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-20"
-        >
+        <div className="text-center mb-20">
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
             Wat je <span className="text-gradient">krijgt</span>
           </h2>
@@ -50,7 +44,7 @@ export function Services() {
             Stop met geld verbranden aan dure webbureau's.<br/>
             <span className="text-white font-semibold">Krijg meer voor minder.</span>
           </p>
-        </motion.div>
+        </div>
 
         {/* Service cards */}
         <div className="grid md:grid-cols-3 gap-8 mb-20">
@@ -74,12 +68,7 @@ export function Services() {
         </div>
 
         {/* Included features */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="relative max-w-4xl mx-auto"
-        >
+        <div className="relative max-w-4xl mx-auto">
           <div className="absolute inset-0 bg-gradient-to-r from-purple-600/40 to-blue-600/40 rounded-3xl blur-3xl" />
           <div className="relative p-12 rounded-3xl bg-white/15 border border-white/30 backdrop-blur-sm">
             <h3 className="text-3xl font-bold mb-8 text-center">Inbegrepen in je pakket</h3>
@@ -95,7 +84,7 @@ export function Services() {
               ))}
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

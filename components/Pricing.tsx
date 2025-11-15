@@ -14,15 +14,10 @@ export function Pricing() {
           
           <div className="relative p-12 rounded-3xl bg-gradient-to-br from-purple-900/20 to-blue-900/20 border border-purple-500/30 backdrop-blur-sm">
             {/* Badge */}
-            <motion.div
-              initial={{ opacity: 0, y: -20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-500/20 border border-red-500/30 mb-8"
-            >
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-500/20 border border-red-500/30 mb-8">
               <Clock className="w-4 h-4 text-red-400" />
               <span className="text-sm text-red-300 font-semibold">3 van 10 plekken al bezet</span>
-            </motion.div>
+            </div>
 
             <div className="space-y-6">
               <div>

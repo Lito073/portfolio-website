@@ -20,27 +20,17 @@ export function Contact() {
   return (
     <section id="contact" className="relative py-32 px-6">
       <div className="max-w-5xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
-        >
+        <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
             Laten we <span className="text-gradient">starten</span>
           </h2>
           <p className="text-xl text-gray-400">
             Stuur een bericht of app direct via WhatsApp
           </p>
-        </motion.div>
+        </div>
 
         <div className="grid md:grid-cols-2 gap-8">
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            className="relative"
-          >
+          <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-br from-purple-600/40 to-blue-600/40 rounded-2xl blur-3xl" />
             <form onSubmit={handleSubmit} className="relative p-8 rounded-2xl bg-white/15 border border-white/30 backdrop-blur-sm space-y-6">
               <div>
@@ -84,14 +74,9 @@ export function Contact() {
                 Verstuur via WhatsApp
               </button>
             </form>
-          </motion.div>
+          </div>
 
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            className="space-y-6"
-          >
+          <div className="space-y-6">
             <div className="relative group">
               <div className="absolute inset-0 bg-gradient-to-br from-green-600/40 to-emerald-600/40 rounded-2xl blur-3xl group-hover:blur-3xl transition-all duration-300" />
               <a
@@ -125,7 +110,7 @@ export function Contact() {
                 <span className="text-purple-400 font-semibold">Tip:</span> Vermeld in je bericht wat voor bedrijf je hebt en wanneer je live wilt gaan. Dan kan ik direct een planning maken!
               </p>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>
