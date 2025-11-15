@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     description: "Complete professionele website in 24-48 uur. Modern design, mobile-friendly, geen abonnement.",
     siteName: "Lito's Lab",
     images: [{
-      url: 'https://actie.litoslab.nl/og-image.jpg',
+      url: 'https://actie.litoslab.nl/og-image.svg',
       width: 1200,
       height: 630,
       alt: "Lito's Lab - Professionele Websites vanaf €200",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: "Professionele Websites vanaf €200 | Lito's Lab",
     description: "Complete professionele website in 24-48 uur. Modern design, mobile-friendly, geen abonnement.",
-    images: ['https://actie.litoslab.nl/og-image.jpg'],
+    images: ['https://actie.litoslab.nl/og-image.svg'],
   },
   robots: {
     index: true,
