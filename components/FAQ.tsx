@@ -35,7 +35,7 @@ const faqs = [
   },
   {
     q: "Waarom zo goedkoop? Wat is de catch?",
-    a: "Geen catch. Ik bouw alles from scratch met Next.js. Geen overhead van een groot bureau, geen dure kantoorpanden. Gewoon eerlijke prijzen."
+    a: "Black Friday Special! Normaal €500, nu €200 om mijn portfolio op te bouwen. Ik bouw alles from scratch met Next.js. Deal eindigt 30 november."
   },
   {
     q: "Hoe snel kan ik starten?",

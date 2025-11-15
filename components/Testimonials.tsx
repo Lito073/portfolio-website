@@ -29,7 +29,7 @@ export function Testimonials() {
             Wat je <span className="text-gradient">krijgt</span> bij Lito's Lab
           </h2>
           <p className="text-xl text-gray-300">
-            Eerlijk, snel en betaalbaar
+            🔥 Black Friday Special - Alleen in november
           </p>
         </div>
 

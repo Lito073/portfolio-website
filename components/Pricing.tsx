@@ -16,7 +16,7 @@ export function Pricing() {
             {/* Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-500/20 border border-red-500/30 mb-8">
               <Clock className="w-4 h-4 text-red-400" />
-              <span className="text-sm text-red-300 font-semibold">3 van 10 plekken al bezet</span>
+              <span className="text-sm text-red-300 font-semibold">🔥 Black Friday - Eindigt 30 nov</span>
             </div>
 
             <div className="space-y-6">
@@ -24,14 +24,14 @@ export function Pricing() {
                 <div className="flex items-baseline gap-3 mb-2">
                   <span className="text-6xl md:text-7xl font-bold text-gradient">€200</span>
                 </div>
-                <p className="text-xl text-gray-200 font-semibold">Eenmalig. Geen abonnement.</p>
+                <p className="text-xl text-gray-200 font-semibold">Black Friday Special - Eenmalig betalen</p>
               </div>
 
               <div className="h-px bg-gradient-to-r from-transparent via-purple-500/50 to-transparent" />
 
               <div className="space-y-3 text-gray-200">
                 <p className="text-lg">
-                  <span className="text-white font-bold">Complete professionele website</span> voor een fractie van de normale prijs.
+                  <span className="text-white font-bold">Complete professionele website</span> - Normaal €500, nu €200 met Black Friday.
                 </p>
                 <p className="flex items-center gap-2">
                   <Sparkles className="w-5 h-5 text-purple-400" />
