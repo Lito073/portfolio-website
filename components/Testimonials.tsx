@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 const benefits = [
   {
     icon: "⚡",
-    title: "Live in 48 uur",
-    text: "Geen weken wachten. Jouw website staat binnen 2 dagen online."
+    title: "Live in 2 dagen",
+    text: "Geen weken wachten. Jouw website staat binnen 48 uur online."
   },
   {
     icon: "💰",
@@ -26,7 +26,7 @@ export function Testimonials() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
-            Waarom <span className="text-gradient">ondernemers</span> kiezen voor Lito's Lab
+            Wat je <span className="text-gradient">krijgt</span> bij Lito's Lab
           </h2>
           <p className="text-xl text-gray-300">
             Eerlijk, snel en betaalbaar

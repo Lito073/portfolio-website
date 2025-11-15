@@ -23,7 +23,6 @@ export function Pricing() {
               <div>
                 <div className="flex items-baseline gap-3 mb-2">
                   <span className="text-6xl md:text-7xl font-bold text-gradient">€200</span>
-                  <span className="text-2xl text-gray-400 line-through">€500</span>
                 </div>
                 <p className="text-xl text-gray-200 font-semibold">Eenmalig. Geen abonnement.</p>
               </div>
@@ -36,7 +35,7 @@ export function Pricing() {
                 </p>
                 <p className="flex items-center gap-2">
                   <Sparkles className="w-5 h-5 text-purple-400" />
-                  Klaar in 24-48 uur
+                  Klaar in 2 dagen
                 </p>
               </div>
 
@@ -67,7 +66,7 @@ export function Pricing() {
             <div className="flex items-start gap-3">
               <span className="text-green-400 text-xl">✓</span>
               <div>
-                <p className="text-white font-bold">Live in 48 uur</p>
+                <p className="text-white font-bold">Live in 2 dagen</p>
                 <p className="text-gray-300 text-sm">Geen weken wachten zoals bij bureaus</p>
               </div>
             </div>

@@ -57,7 +57,7 @@ export function Hero() {
             <span className="block text-gradient glow">
               <TypeAnimation
                 sequence={[
-                  'in 48 uur',
+                  'in 2 dagen',
                   2000,
                   'zonder gedoe',
                   2000,
@@ -74,7 +74,7 @@ export function Hero() {
           <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed hero-text">
             Geen Fiverr-troep. Geen Wix-templates. Geen bureau-prijzen.
             <br />
-            <span className="text-white font-bold">Gewoon een professionele website die werkt. €200 all-in.</span>
+            <span className="text-white font-bold">Gewoon een professionele website die werkt. €200 all-in, klaar in 2 dagen.</span>
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8 hero-text">

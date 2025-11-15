@@ -7,7 +7,7 @@ const services = [
   {
     icon: Zap,
     title: "Razendsnel",
-    description: "Jouw website live in 24-48 uur. Geen weken wachten.",
+    description: "Jouw website live in 2 dagen. Geen weken wachten.",
   },
   {
     icon: Smartphone,
@@ -41,7 +41,7 @@ export function Services() {
             Wat je <span className="text-gradient">krijgt</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Stop met geld verbranden aan dure webbureau's.<br/>
+            Professionele kwaliteit zonder de hoge kosten.<br/>
             <span className="text-white font-bold">Krijg meer voor minder.</span>
           </p>
         </div>

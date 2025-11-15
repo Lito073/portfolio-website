@@ -14,7 +14,7 @@ const benefits = [
   {
     icon: Clock,
     title: "Snelheid = Kansen",
-    forYou: "Live in 48 uur, geen maanden wachten op een bureau",
+    forYou: "Live in 2 dagen, geen maanden wachten op een bureau",
     forMe: "Efficiënt werken betekent meer ondernemers helpen",
     color: "from-blue-600 to-cyan-600"
   },
@@ -46,7 +46,7 @@ export function WhyUs() {
             Waarom dit <span className="text-gradient">voor ons beiden werkt</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Geen bullshit, geen verborgen agenda. Dit is waarom samenwerken met Lito's Lab een no-brainer is.
+            Transparant en eerlijk. Dit is waarom samenwerken met Lito's Lab een slimme keuze is.
           </p>
         </div>
 

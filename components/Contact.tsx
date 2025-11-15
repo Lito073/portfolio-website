@@ -14,7 +14,7 @@ export function Contact() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const text = `Hoi! Ik ben ${formData.name}. ${formData.message}`;
-    window.open(`https://wa.me/31612345678?text=${encodeURIComponent(text)}`, "_blank");
+    window.open(`https://wa.me/31624329310?text=${encodeURIComponent(text)}`, "_blank");
   };
 
   return (
@@ -80,7 +80,7 @@ export function Contact() {
             <div className="relative group">
               <div className="absolute inset-0 bg-gradient-to-br from-green-600/40 to-emerald-600/40 rounded-2xl blur-3xl group-hover:blur-3xl transition-all duration-300" />
               <a
-                href="https://wa.me/31612345678"
+                href="https://wa.me/31624329310"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="relative block p-8 rounded-2xl bg-white/20 border border-white/40 backdrop-blur-sm hover:border-green-500/70 hover:bg-white/30 transition-all duration-300"

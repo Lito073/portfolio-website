@@ -7,7 +7,7 @@ import { ChevronDown } from "lucide-react";
 const faqs = [
   {
     q: "Wat als ik niet tevreden ben?",
-    a: "100% geld-terug-garantie. Niet tevreden? Volledige refund, no questions asked. Jouw tevredenheid is mijn prioriteit."
+    a: "100% geld-terug-garantie. Niet tevreden? Volledige refund zonder vragen. Jouw tevredenheid is mijn prioriteit."
   },
   {
     q: "Krijg ik de broncode van mijn website?",
@@ -39,7 +39,7 @@ const faqs = [
   },
   {
     q: "Hoe snel kan ik starten?",
-    a: "Vandaag nog! Stuur me je info via WhatsApp, dan start ik morgen. Website is binnen 48 uur live."
+    a: "Vandaag nog! Stuur me je info via WhatsApp, dan start ik morgen. Website is binnen 2 dagen live."
   },
   {
     q: "Wat heb je van mij nodig?",
