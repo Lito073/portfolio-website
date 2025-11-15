@@ -60,63 +60,46 @@ export function Pricing() {
           </div>
         </div>
 
-        {/* Comparison Table */}
-        <div className="mt-20 max-w-5xl mx-auto">
+        {/* Why Choose Us */}
+        <div className="mt-20 max-w-3xl mx-auto">
           <h3 className="text-2xl md:text-3xl font-bold text-center mb-8 text-white">Waarom Lito's Lab?</h3>
-          <div className="overflow-x-auto">
-            <div className="p-4 md:p-8 rounded-2xl bg-white/20 border border-white/40 backdrop-blur-sm">
-            <table className="w-full min-w-[600px]">
-              <thead>
-                <tr className="border-b border-white/30">
-                  <th className="text-left p-4 text-gray-300 font-semibold"></th>
-                  <th className="p-4 text-center">
-                    <div className="text-white font-bold text-lg">Lito's Lab</div>
-                    <div className="text-purple-400 text-sm">€200</div>
-                  </th>
-                  <th className="p-4 text-center text-gray-300">Webbureau<br/><span className="text-sm">€2500+</span></th>
-                  <th className="p-4 text-center text-gray-300">Fiverr<br/><span className="text-sm">€50-150</span></th>
-                  <th className="p-4 text-center text-gray-300">Wix/Squarespace<br/><span className="text-sm">€15/mnd</span></th>
-                </tr>
-              </thead>
-              <tbody className="text-sm">
-                <tr className="border-b border-white/20">
-                  <td className="p-4 text-gray-200 font-medium">Levertijd</td>
-                  <td className="p-4 text-center text-green-400 font-semibold">48 uur</td>
-                  <td className="p-4 text-center text-gray-500">4-8 weken</td>
-                  <td className="p-4 text-center text-gray-500">1-2 weken</td>
-                  <td className="p-4 text-center text-gray-500">Zelf doen</td>
-                </tr>
-                <tr className="border-b border-white/20">
-                  <td className="p-4 text-gray-200 font-medium">Kwaliteit</td>
-                  <td className="p-4 text-center text-green-400">✓ Professioneel</td>
-                  <td className="p-4 text-center text-green-400">✓ Professioneel</td>
-                  <td className="p-4 text-center text-red-400">✗ Wisselend</td>
-                  <td className="p-4 text-center text-yellow-400">~ Template</td>
-                </tr>
-                <tr className="border-b border-white/20">
-                  <td className="p-4 text-gray-200 font-medium">Maandkosten</td>
-                  <td className="p-4 text-center text-green-400 font-semibold">€0</td>
-                  <td className="p-4 text-center text-gray-500">€50-200</td>
-                  <td className="p-4 text-center text-gray-500">€0</td>
-                  <td className="p-4 text-center text-gray-500">€15-40</td>
-                </tr>
-                <tr className="border-b border-white/20">
-                  <td className="p-4 text-gray-200 font-medium">Support</td>
-                  <td className="p-4 text-center text-green-400">✓ 2 weken gratis</td>
-                  <td className="p-4 text-center text-green-400">✓ Betaald</td>
-                  <td className="p-4 text-center text-red-400">✗ Minimaal</td>
-                  <td className="p-4 text-center text-yellow-400">~ Forum</td>
-                </tr>
-                <tr>
-                  <td className="p-4 text-gray-200 font-medium">Eigendom code</td>
-                  <td className="p-4 text-center text-green-400">✓ 100% van jou</td>
-                  <td className="p-4 text-center text-green-400">✓ Meestal wel</td>
-                  <td className="p-4 text-center text-yellow-400">~ Soms</td>
-                  <td className="p-4 text-center text-red-400">✗ Vendor lock-in</td>
-                </tr>
-              </tbody>
-            </table>
+          <div className="p-6 md:p-8 rounded-2xl bg-white/20 border border-white/40 backdrop-blur-sm space-y-4">
+            <div className="flex items-start gap-3">
+              <span className="text-green-400 text-xl">✓</span>
+              <div>
+                <p className="text-white font-bold">Live in 48 uur</p>
+                <p className="text-gray-300 text-sm">Geen weken wachten zoals bij bureaus</p>
+              </div>
             </div>
+            <div className="flex items-start gap-3">
+              <span className="text-green-400 text-xl">✓</span>
+              <div>
+                <p className="text-white font-bold">€200 eenmalig, €0 per maand</p>
+                <p className="text-gray-300 text-sm">Geen abonnementen zoals Wix (€15-40/mnd)</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3">
+              <span className="text-green-400 text-xl">✓</span>
+              <div>
+                <p className="text-white font-bold">Professionele kwaliteit</p>
+                <p className="text-gray-300 text-sm">Geen Fiverr-troep of Wix-templates</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3">
+              <span className="text-green-400 text-xl">✓</span>
+              <div>
+                <p className="text-white font-bold">100% eigendom van jouw code</p>
+                <p className="text-gray-300 text-sm">Geen vendor lock-in, alles van jou</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3">
+              <span className="text-green-400 text-xl">✓</span>
+              <div>
+                <p className="text-white font-bold">2 weken gratis support</p>
+                <p className="text-gray-300 text-sm">Direct via WhatsApp, geen forums</p>
+              </div>
+            </div>
+          </div>
           </div>
         </div>
       </div>
